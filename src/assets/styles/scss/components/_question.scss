@@ -1,0 +1,32 @@
+// *********************************
+// Question
+// *********************************
+
+.question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  border-bottom: 1px solid $helper-color;
+
+  &__main {
+    width: 75%;
+    height: 100%;
+    background: red;
+  }
+
+  &__title {
+
+  }
+
+  &__answers {
+    
+  }
+
+  &__info {
+    width: calc(25% + 30px);
+    height: 100%;
+    background: blue;
+  }
+}
