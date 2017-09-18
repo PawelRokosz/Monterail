@@ -8,6 +8,7 @@ class QuestionsContainer extends React.Component {
       <div className="questionsContainer">
         <div className="questionsContainer__inner">
           <Question/>
+          <Question/>
           <LoadMore/>
         </div>
       </div>
