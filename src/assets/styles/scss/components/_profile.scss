@@ -19,7 +19,7 @@
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 500px;
+    height: 600px;
     background: $background-color-a;
   }
 
@@ -68,7 +68,24 @@
   &__main {
     width: 100%;
     height: 55%;
-    background: red;
+  }
+
+  &__carousel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .carousel-left {
+      width: 50px;
+      height: 50px;
+      background: black;
+    }
+
+    .carousel-right {
+      width: 50px;
+      height: 50px;
+      background: black;
+    }
   }
 
   &__footer {
