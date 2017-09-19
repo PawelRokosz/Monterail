@@ -1,0 +1,79 @@
+// *********************************
+// Profile
+// *********************************
+
+.profile {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: rgba(black, 0.5);
+  z-index: 2;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+    background: $background-color-a;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+  }
+
+  &__user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+  }
+
+  &__user-photo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 30%;
+    border-bottom: 1px solid $usefull-color-b;
+  }
+
+  &__info-text {
+    margin-right: 20px;
+  }
+
+  &__info-text-important {
+    margin-right: 5px;
+  }
+
+  &__main {
+    width: 100%;
+    height: 55%;
+    background: red;
+  }
+
+  &__footer {
+    width: 100%;
+    height: 20%;
+    background: green;
+  }
+}

@@ -4,7 +4,7 @@ class LoadMore extends React.Component {
   render() {
     return (
       <div className="questionsContainer__loadMore">
-        <span className="loadMore">load more questions</span>
+        <span className="text__unique">load more questions</span>
       </div>
     );
   }

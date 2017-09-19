@@ -12,12 +12,12 @@
   box-shadow: 0px 26px 35px -42px rgba(0,0,0,0.2);
   z-index: 1;
 
-  @include respond-at-width(1100px) {
+  @include respond-at-width(1250px) {
     padding: 0 150px;
   }
 
-  @include respond-at-width(900px) {
-    padding: 0 50px;
+  @include respond-at-width(1100px) {
+    padding: 0 100px;
   }
 
   &__container {
@@ -39,12 +39,6 @@
       width: 40%;
     }
 
-    &__title {
-      font-size: 1.5em;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-
     &__addQuestion {
       font-size: 1.5em;
       border-radius: 50px;
@@ -64,23 +58,14 @@
 
     &__sort {
       margin-left: 50px;
-      font-size: 0.8em;
-      font-style: italic;
     }
 
     &__sortBy {
       cursor: pointer;
-      color: $addQuestion-color;
-
-      &:focus {
-        color: $helper-color;
-      }
     }
 
     .radioLabel {
       margin-left: 5px;
-      font-size: 0.8em;
-      font-weight: bold;
     }
 
     .radioInput {
@@ -102,23 +87,20 @@
       width: 75%;
       height: 40px;
       padding: 0 30px;
-      border: 1px solid $input-border-color;
-      background-color: $input-background-color;
-      color: $helper-color;
+      border: 1px solid $usefull-color-a;
+      background-color: $background-color-b;
+      color: $usefull-color-b:
     }
 
     &__submit {
       width: 25%;
       height: 40px;
       margin-left: 30px;
-      border: 1px solid $helper-color;
-      background-color: $component-backgroud-color;
-      text-transform: uppercase;
-      font-weight: bold;
-      color: $helper-color;
+      border: 1px solid $usefull-color-b;
+      background-color: $background-color-a;
 
       &::placeholder {
-        color: $helper-color;
+        color: $usefull-color-b;
       }
     }
   }

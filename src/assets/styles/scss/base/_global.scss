@@ -13,3 +13,105 @@ body {
     font-size: 13px;
   }
 }
+
+.text {
+  color: $font-color;
+
+  &__unique {
+    color: $important-color-b;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  &__small {
+    font-size: 0.5em;
+  }
+
+  &__standard {
+    font-size: 0.8em;
+
+    &--bold {
+      font-weight: 700;
+    }
+  }
+
+  &__normal {
+    font-size: 1em;
+
+    &--italic {
+      font-style: italic;
+    }
+
+    &--placeholder {
+      color: $usefull-color-b;
+      font-weight: 300;
+    }
+
+    &--sub {
+      color: $usefull-color-b;
+      text-transform: uppercase;
+    }
+  }
+
+  &__big {
+    font-size: 2em;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  &__bold {
+    font-size: 1rem;
+    font-weight: 700;
+
+    &--a {
+      color: $usefull-color-b;
+      text-decoration: underline;
+    }
+
+    &--b {
+      font-style: italic;
+    }
+  }
+
+  &__upper {
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &--a {
+      color: $usefull-color-b;
+    }
+
+    &--b {
+      color: $usefull-color-b;
+      font-size: 0.8em;
+    }
+
+    &--title {
+      font-size: 1.5em;
+    }
+  }
+
+  &__eyecatch {
+    color: $important-color-a;
+    font-weight: 700;
+
+    &--a {
+      font-size: 0.8rem;
+    }
+
+    &--b {
+      font-size: 1em;
+    }
+
+    &--c {
+      font-size: 1em;
+      font-style: italic;
+    }
+
+    &--d {
+      font-size: 1.2em;
+    }
+  }
+}
