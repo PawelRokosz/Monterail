@@ -14,13 +14,30 @@
   z-index: 2;
 
   &__container {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 600px;
+    height: 800px;
     background: $background-color-a;
+
+    @include respond-at-width(1250px) {
+      width: 70%;
+    }
+
+    @include respond-at-width(700px) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: $usefull-color-b;
   }
 
   &__header {
@@ -29,7 +46,12 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 25%;
+    height: 300px;
+
+    @include respond-at-width(700px) {
+      height: auto;
+      padding-top: 10px;
+    }
   }
 
   &__user {
@@ -55,10 +77,21 @@
     width: 100%;
     height: 30%;
     border-bottom: 1px solid $usefull-color-b;
+
+    @include respond-at-width(700px) {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
   }
 
   &__info-text {
     margin-right: 20px;
+
+    @include respond-at-width(700px) {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
   }
 
   &__info-text-important {
@@ -67,13 +100,14 @@
 
   &__main {
     width: 100%;
-    height: 55%;
+    height: auto;
   }
 
   &__carousel {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 10px;
 
     .carousel-left {
       width: 50px;
@@ -88,9 +122,183 @@
     }
   }
 
-  &__footer {
+  &__history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__history-stats {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: 20%;
-    background: green;
+    margin-top: 30px;
+
+    @include respond-at-width(700px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__history-stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    max-width: 85px;
+    min-width: 85px;
+    height: 85px;
+    background-color: $background-color-c;
+    text-align: center;
+
+    &:not(:last-child){
+      margin-right: 25px;
+    }
+
+    &--1 {
+      transform: rotate(20deg);
+
+      & > * {
+        transform: rotate(-20deg);
+      }
+    }
+
+    &--2 {
+      transform: rotate(150deg);
+
+      & > * {
+        transform: rotate(-150deg);
+      }
+    }
+
+    &--3 {
+      transform: rotate(50deg);
+
+      & > * {
+        transform: rotate(-50deg);
+      }
+    }
+
+    &--4 {
+      transform: rotate(75deg);
+
+      & > * {
+        transform: rotate(-75deg);
+      }
+    }
+  }
+
+  &__related-users {
+    margin-top: 30px;
+  }
+
+  &__related-users-title {
+    text-align: center;
+  }
+
+  &__related-users-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100px;
+    margin-top: 10px;
+  }
+
+  &__related-users-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    width: 85px;
+    height: 100%;
+  }
+
+  &__related-users-user-backgroud {
+    width: 100%;
+    height: 85px;
+    background: repeating-linear-gradient(
+      45deg,
+      rgba(lightgrey, 0.6),
+      white 1px
+    );
+  }
+
+  &__related-users-user-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    & > img {
+      width: 70%;
+      height: 70%;
+      border-radius: 50px;
+    }
+  }
+
+  &__related-users-name {
+    text-align: center;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+
+    @include respond-at-width(700px) {
+      height: auto;
+    }
+  }
+
+  &__footer-title {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__footer-background {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+      45deg,
+      rgba(lightgrey, 0.6),
+      white 1px
+    );
+
+    @include respond-at-width(700px) {
+      padding: 30px 10px;
+    }
+  }
+
+  &__footer-img {
+    position: absolute;
+    top: -25px;
+    width: 50px;
+    height: 50px;
+
+    &  > img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50px;
+    }
+  }
+
+  &__footer-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 }

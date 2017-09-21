@@ -9,8 +9,12 @@ body {
     font-size: 15px;
   }
 
-  @include respond-at-width(800px){
-    font-size: 13px;
+  // @include respond-at-width(900px){
+  //   font-size: 13px;
+  // }
+
+  @include respond-at-width(700px){
+    font-size: 11px;
   }
 }
 
